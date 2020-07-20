@@ -1,19 +1,18 @@
+console.log('Задание 3');
+
 const findLongestWord = function (string) {
+  const words = string.split(' ');
 
-    const words = string.split(' ');
-    console.log(words);
+  let longestWord = words[0];
 
-    let longestWord = words[0];
-
-    for (let i = 1; i < words.length; i += 1) {
-        if (words[i].length > longestWord.length) {
-            longestWord = words[i];
-        }
+  for (let i = 1; i < words.length; i += 1) {
+    if (words[i].length > longestWord.length) {
+      longestWord = words[i];
     }
-    console.log(`Самое длинное слово в строке - ${longestWord}`);
-    return longestWord;
-}
-
+  }
+  console.log(`Самое длинное слово в строке - ${longestWord}`);
+  return longestWord;
+};
 
 /*
  * Вызовы функции для проверки работоспособности твоей реализации.

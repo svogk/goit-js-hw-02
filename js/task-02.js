@@ -1,18 +1,20 @@
+console.log('Задание 2');
+
 const calculateEngravingPrice = function (message, pricePerWord) {
   const words = message.split(' ');
-  console.log(words);
 
   const wordsCount = words.length;
 
   const result = wordsCount * pricePerWord;
 
-  console.log(`Строка состоит из ${wordsCount} слов. 
-  Стоимость гравировки одного слова ${pricePerWord}. 
-  Стоимость гравировки строки ${result}.`);
+  console.log(`
+  Строка состоит из ${wordsCount} слов.
+  Стоимость гравировки одного слова ${pricePerWord}.
+  Стоимость гравировки строки ${result}.
+  `);
 
   return result;
 };
-
 
 console.log(
   calculateEngravingPrice(

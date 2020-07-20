@@ -1,10 +1,13 @@
-const checkForSpam = function (message) {
-    const normalizedMessage = message.toLowerCase();
-    console.log(normalizedMessage);
+console.log('Задание 5');
 
-    const isItSpam = normalizedMessage.includes('spam') || normalizedMessage.includes('sale');
-    
-    return isItSpam ? true : false;
+const checkForSpam = function (message) {
+  const normalizedMessage = message.toLowerCase();
+  console.log(normalizedMessage);
+
+  const isItSpam =
+    normalizedMessage.includes('spam') || normalizedMessage.includes('sale');
+
+  return isItSpam ? true : false;
 };
 
 /*

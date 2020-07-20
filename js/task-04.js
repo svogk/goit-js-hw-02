@@ -1,13 +1,13 @@
+console.log('Задание 4');
+
 const formatString = function (string) {
-
-    if (string.length <= 40) {
-        return string;
-    } else {
-        const newFormatString = string.slice(0, 40);
-        return `${newFormatString} ... `;
-    }
+  if (string.length <= 40) {
+    return string;
+  } else {
+    const newFormatString = string.slice(0, 40);
+    return `${newFormatString} ... `;
+  }
 };
-
 
 /*
  * Вызовы функции для проверки работоспособности твоей реализации.
@@ -22,8 +22,8 @@ console.log(formatString('Curabitur ligula sapien.'));
 // вернется оригинальная строка
 
 console.log(
-    formatString(
-        'Nunc sed turpis. Curabitur a felis in nunc fringilla tristique.',
-    ),
+  formatString(
+    'Nunc sed turpis. Curabitur a felis in nunc fringilla tristique.',
+  ),
 );
-  // вернется форматированная строка
+// вернется форматированная строка
